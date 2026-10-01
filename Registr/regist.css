@@ -21,20 +21,12 @@ body {
 }
 
 .container {
-  margin: 80px;
+  margin: 60px;
   padding: 20px;
 
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-}
-
-/* R e g i s t r a t i o n */
-.registration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .h1_signin {
