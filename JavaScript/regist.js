@@ -61,3 +61,9 @@ btnGoToSignIn.addEventListener('click', (e) => {
   signIn.style.display = 'flex';
 });
 
+const checkPolicy = document.getElementById('terms');
+const btnPolicy = document.querySelector('.btn_terms');
+
+checkPolicy.addEventListener('click', (e) => {
+  btnPolicy.disabled = !checkPolicy.checked;
+});

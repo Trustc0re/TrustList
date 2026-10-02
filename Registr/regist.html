@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./../styles/main.css">
+  <link rel="stylesheet" href="./../styles/styles.css">
   <link rel="stylesheet" href="regist.css">
 
   <title>TrustList - Registration</title>
@@ -19,11 +19,12 @@
   <main>
     <section>
       <div class="container">
-            <!-- SING IN -->
-            <div id="signInBlock" class="signin">
-              <h1 class="h1_signin">Sign In</h1>
-              <form id="form" action="">
-              <div class="box_input">
+        <!-- SING IN -->
+        <div id="signInBlock" class="signin">
+          <h1 class="h1_signin">Sign In</h1>
+
+          <form id="form" action="">
+            <div class="box_input">
                 <!-- Username -->
                 <div class="box_user">
                   <input type="text" id="login" maxlength="10" minlength="4" placeholder="Your username" pattern="[a-zA-Z0-9]+" required>
@@ -40,76 +41,17 @@
                 <a href="#!" class="p_password">
                   <p>Forgot Password?</p>
                 </a>
-              </div>
-
-              <!-- Button -->
-              <a href="#!">
-                <button class="btn_signin" type="submit">SIGN IN</button>
-              </a>
-              </form>
-              <!-- Sign in using -->
-              <p class="p_sign_use">Sign in using</p>
-
-              <div class="sociales">
-                <a href="#!">
-                  <img src="./../img/Registration/R_sociales/telegram.svg" class="icon" alt="Telegram">
-                </a>
-
-                <a href="#!">
-                  <img src="./../img/Registration/R_sociales/linkedin.svg" class="icon" alt="Linkedin">
-                </a>
-                
-                <a href="#!">
-                  <img src="./../img/Registration/R_sociales/facebook.svg" class="icon" alt="Facebook">
-                </a>
-
-                <a href="#!">
-                  <img src="./../img/Registration/R_sociales/instagram.svg" class="icon" alt="Instagram">
-                </a>
-              </div>
-              <!-- Create Account -->
-              <a href="#!" id="textSignIn" class="p_create">Create Account</a>
-              
             </div>
 
-          <!-- Sign Up -->
-          <div id="signUpBlock" class="signup">
-            <h1 class="h1_signin">Sign Up</h1>
-            <form id="form_signup" action="">
-              <div class="box_input">
-                <!-- Username -->
-                <div class="box_user">
-                  <input type="text" id="login" maxlength="10" minlength="4" placeholder="Your username" pattern="[a-zA-Z0-9]+" required>
-                  <img src="./../img/Registration/R_icons/user.svg" alt="Icon" class="user">
-                </div>
+            <!-- Button -->
+            <a href="#!">
+            <button class="btn_signin" type="submit">SIGN IN</button>
+            </a>
+          </form>
+          <!-- Sign in using -->
+          <p class="p_sign_use">Sign in using</p>
 
-                <!-- Email -->
-                <div class="box_email">
-                  <input type="email" id="login" maxlength="30" minlength="6" placeholder="Your email" pattern="[a-zA-Z0-9]+" required>
-                  <img src="./../img/Registration/R_icons/email.svg" alt="Icon" class="email">
-                </div>
-
-                <!-- Password -->
-                <div class="box_password">
-                  <input type="password" id="password" maxlength="16" minlength="8" placeholder="Your password" pattern="[a-zA-Z0-9_\-+]+" required>
-                  <img src="./../img/Registration/R_icons/eye.svg" id="eye-icon" class="eye" alt="Icon">
-                </div>
-                
-                <!-- Forgot Password -->
-                <a href="#!" class="p_password">
-                  <p>Forgot Password?</p>
-                </a>
-              </div>
-
-              <!-- Button -->
-              <a href="#!">
-                <button class="btn_signin" type="submit">SIGN UP</button>
-              </a>
-              </form>
-              <!-- Sign in using -->
-              <p class="p_sign_use">Sign in using</p>
-
-              <div class="sociales">
+          <div class="sociales">
                 <a href="#!">
                   <img src="./../img/Registration/R_sociales/telegram.svg" class="icon" alt="Telegram">
                 </a>
@@ -125,12 +67,77 @@
                 <a href="#!">
                   <img src="./../img/Registration/R_sociales/instagram.svg" class="icon" alt="Instagram">
                 </a>
-              </div>
-              <!-- Create Account -->
-              <a href="#!" id="textSignUp" class="p_create">Already have an account? Sign In</a>
-
           </div>
+          <!-- Create Account -->
+          <a href="#!" id="textSignIn" class="p_create">Create Account</a>
               
+        </div>
+
+        <!-- Sign Up -->
+        <div id="signUpBlock" class="signup">
+          <h1 class="h1_signin">Sign Up</h1>
+          <form id="form_signup" action="">
+
+            <div class="box_input">
+              <!-- Username -->
+              <div class="box_user">
+                <input type="text" id="login" maxlength="10" minlength="4" placeholder="Your username" pattern="[a-zA-Z0-9]+" required>
+                <img src="./../img/Registration/R_icons/user.svg" alt="Icon" class="user">
+              </div>
+
+              <!-- Email -->
+              <div class="box_email">
+                <input type="email" id="login" maxlength="30" minlength="6" placeholder="Your email" required>
+                <img src="./../img/Registration/R_icons/email.svg" alt="Icon" class="email">
+              </div>
+
+              <!-- Password -->
+              <div class="box_password">
+                <input type="password" id="password" maxlength="16" minlength="8" placeholder="Your password" pattern="[a-zA-Z0-9_\-+]+" required>
+                <img src="./../img/Registration/R_icons/eye.svg" id="eye-icon" class="eye" alt="Icon">
+              </div>
+
+              <!-- Terms -->
+              <div class="terms-container">
+                <input type="checkbox" id="terms" required>
+
+                <label class="label_terms" for="terms">
+                    I agree to the
+                  <a href="#!">privacy policy</a>
+                </label>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <a href="#!">
+              <button class="btn_signin btn_terms" type="submit" disabled>SIGN UP</button>
+            </a>
+          </form>
+          <!-- Sign in using -->
+          <p class="p_sign_use">Sign in using</p>
+
+          <div class="sociales">
+                <a href="#!">
+                  <img src="./../img/Registration/R_sociales/telegram.svg" class="icon" alt="Telegram">
+                </a>
+
+                <a href="#!">
+                  <img src="./../img/Registration/R_sociales/linkedin.svg" class="icon" alt="Linkedin">
+                </a>
+                
+                <a href="#!">
+                  <img src="./../img/Registration/R_sociales/facebook.svg" class="icon" alt="Facebook">
+                </a>
+
+                <a href="#!">
+                  <img src="./../img/Registration/R_sociales/instagram.svg" class="icon" alt="Instagram">
+                </a>
+          </div>
+          <!-- Create Account -->
+          <a href="#!" id="textSignUp" class="p_create">Already have an account? Sign In</a>
+
+        </div>
+        <!-- Forgot Password -->
       </div>
     </section>
    </main>

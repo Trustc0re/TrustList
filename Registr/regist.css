@@ -98,7 +98,6 @@ form {
 /* Button */
 .btn_signin {
   display: inline-block;
-  cursor: pointer;
   padding: 10px 50px;
 
   border-radius: 20px;
@@ -108,6 +107,7 @@ form {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1.2px;
+  cursor: pointer;
 }
 
 .btn_signin:active {
@@ -169,4 +169,28 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#terms {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.label_terms {
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.btn_terms {
+  margin-top: 10px;
+}
+
+.btn_terms:disabled {
+  background: #000;
+
+  transition: all 1s;
+  opacity: 0.8;
+  cursor: not-allowed;
+  pointer-events: none;
 }

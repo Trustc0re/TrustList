@@ -1,0 +1,19 @@
+@import url(reset.css);
+@import url(media.css);
+
+/* F o n t s */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap'); /* Quicksand - everything | Amaranth - Logo */
+/* @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Edu+QLD+Hand:wght@400..700&family=Quicksand:wght@300..700&display=swap'); */
+
+:root {
+  /* C o l o r */
+
+  /* Text */
+  --text-muted: #b1b1b1;
+
+  /* V a r i a b l e s */
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
